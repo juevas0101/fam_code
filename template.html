@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações Médicas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #fce5cd;
+        }
+
+        .container {
+            margin-top: 20px;
+            max-width: 500px;
+        }
+
+        .card {
+            margin-bottom: 15px;
+        }
+
+        .btn-atualizar {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="mb-3">Informações Médicas</h2>
+
+  
+    <div class="card">
+        <div class="card-header bg-warning">
+            Médico
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="medicoNome">Nome:</label>
+                <input type="text" class="form-control" id="medicoNome" value="Dr. Exemplo">
+            </div>
+            <div class="form-group">
+                <label for="medicoCRM">CRM:</label>
+                <input type="text" class="form-control" id="medicoCRM" value="12345">
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="card">
+        <div class="card-header bg-warning">
+            Paciente
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="pacienteCPF">CPF:</label>
+                <input type="text" class="form-control" id="pacienteCPF" value="123.456.789-00">
+            </div>
+            <div class="form-group">
+                <label for="pacienteNome">Nome:</label>
+                <input type="text" class="form-control" id="pacienteNome" value="Fulano de Tal">
+            </div>
+            <div class="form-group">
+                <label for="pacienteNascimento">Nascimento:</label>
+                <input type="text" class="form-control" id="pacienteNascimento" value="01/01/1990">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="card-header bg-warning">
+            Tipo de Consulta
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="tipoConsulta">Tipo:</label>
+                <input type="text" class="form-control" id="tipoConsulta" value="Rotina">
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <div class="card-header bg-warning">
+            Status
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="status">Status:</label>
+                <input type="text" class="form-control" id="status" value="Aprovado">
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="card">
+        <div class="card-header bg-warning">
+            Unidade
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="nomeUnidade">Nome da Unidade:</label>
+                <input type="text" class="form-control" id="nomeUnidade" value="Hospital ABC">
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-atualizar" onclick="atualizarDados()">Atualizar Dados</button>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script>
+    function atualizarDados() {
+        document.getElementById("medicoNome").value = "Dra. Helena Silva";
+        document.getElementById("medicoCRM").value = "54321";
+        document.getElementById("pacienteCPF").value = "987.654.321-00";
+        document.getElementById("pacienteNome").value = "João da Silva";
+        document.getElementById("pacienteNascimento").value = "15/05/1985";
+        document.getElementById("tipoConsulta").value = "Nutricionista";
+        document.getElementById("status").value = "Pendente";
+        document.getElementById("nomeUnidade").value = "Posto de Saúde XYZ";
+    }
+</script>
+
+</body>
+</html>
